@@ -1,0 +1,585 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\GMFConvert.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\GMFConvert.ico"
+IDR_GMFCONTYPE          ICON    DISCARDABLE     "res\\GMFConvertDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDB_STATUS              BITMAP  DISCARDABLE     "res\\status.bmp"
+IDB_STATUS_SMALL        BITMAP  DISCARDABLE     "res\\status_small.bmp"
+IDB_HEADERSORT_SMALL    BITMAP  DISCARDABLE     "res\\headersort_small.bmp"
+IDB_FILENAME_BROWSE     BITMAP  DISCARDABLE     "res\\filename.bmp"
+IDB_FOLDER_BROWSE       BITMAP  DISCARDABLE     "res\\folder.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  24, 24
+BEGIN
+    BUTTON      ID_CLEAR_LIST
+    BUTTON      ID_ADD_FILE
+    BUTTON      ID_ADD_DIR
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_SELECT_ALL
+    BUTTON      ID_INVERT_SEL
+    BUTTON      ID_UNSELECT_ALL
+    SEPARATOR
+    BUTTON      ID_CONFIG_CONVERT
+    BUTTON      ID_RUN_CONVERT
+    BUTTON      ID_PAUSE_CONVERT
+    BUTTON      ID_STOP_CONVERT
+    SEPARATOR
+    BUTTON      ID_OPTIONS
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Clear list\tCtrl+C",         ID_CLEAR_LIST
+        MENUITEM SEPARATOR
+        MENUITEM "Add &file(s)\tCtrl+F",        ID_ADD_FILE
+        MENUITEM "Add &directory\tCtrl+D",      ID_ADD_DIR
+        MENUITEM SEPARATOR
+        MENUITEM "&Options...\tCtrl+O",         ID_OPTIONS
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Remove\tDel",                ID_EDIT_CUT
+        MENUITEM SEPARATOR
+        MENUITEM "Select &all\tCtrl+S",         ID_SELECT_ALL
+        MENUITEM "&Invert selection\tCtrl+I",   ID_INVERT_SEL
+        MENUITEM "U&nselect all\tCtrl+U",       ID_UNSELECT_ALL
+    END
+    POPUP "&Convert"
+    BEGIN
+        MENUITEM "&Configure...\tIns",          ID_CONFIG_CONVERT
+        MENUITEM SEPARATOR
+        MENUITEM "&Run\tReturn",                ID_RUN_CONVERT
+        MENUITEM "&Pause\tSpace",               ID_PAUSE_CONVERT
+        MENUITEM "&Stop\tBackSpace",            ID_STOP_CONVERT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About GMFConvert...",        ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "C",            ID_CLEAR_LIST,          VIRTKEY, CONTROL, NOINVERT
+    "D",            ID_ADD_DIR,             VIRTKEY, CONTROL, NOINVERT
+    "F",            ID_ADD_FILE,            VIRTKEY, CONTROL, NOINVERT
+    "I",            ID_INVERT_SEL,          VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_OPTIONS,             VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_SELECT_ALL,          VIRTKEY, CONTROL, NOINVERT
+    "U",            ID_UNSELECT_ALL,        VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_STOP_CONVERT,        VIRTKEY, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, NOINVERT
+    VK_INSERT,      ID_CONFIG_CONVERT,      VIRTKEY, NOINVERT
+    VK_RETURN,      ID_RUN_CONVERT,         VIRTKEY, NOINVERT
+    VK_SPACE,       ID_PAUSE_CONVERT,       VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 168, 106
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About GMFConvert"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,12,20,20
+    LTEXT           "GMFConvert v1.00",IDC_STATIC,40,10,65,8,SS_NOPREFIX
+    LTEXT           "Copyright© 2004 ANX Software\nAuthor: Valery V. Anisimovsky",
+                    IDC_STATIC,37,25,102,16
+    DEFPUSHBUTTON   "OK",IDOK,111,7,50,14,WS_GROUP
+    LTEXT           "For a conversion you need the necessary DirectShow filters installed. These include:\n1. Parsers/splitters for the source formats;\n2. Decompressors for the source streams;\n3. Compressors for the destination AVI/WAV;\n4. WAVDest filter for WAV writing.",
+                    IDC_STATIC,7,44,154,55,SS_SUNKEN | NOT WS_GROUP
+END
+
+IDD_OPTIONS DIALOG DISCARDABLE  0, 0, 240, 63
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Conversion list",IDC_STATIC,7,7,172,38
+    CONTROL         "&Get file duration when adding it to list",
+                    IDC_DURATION_ADD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    14,18,131,10
+    CONTROL         "&Recurse subdirectories when adding directory",
+                    IDC_RECURSIVE_ADDDIR,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,31,159,10
+    DEFPUSHBUTTON   "OK",IDOK,183,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,183,24,50,15
+    PUSHBUTTON      "&Defaults",IDC_DEFAULTS,183,41,50,14
+END
+
+IDD_CONFIGURE_FILE DIALOG DISCARDABLE  0, 0, 290, 249
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Output file settings"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Output &folder",IDC_STATIC,7,7,276,51,WS_GROUP
+    CONTROL         "Same as input folder",IDC_OUTPUT_FOLDER_SAME,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,12,16,80,10
+    CONTROL         "Use the one below:",IDC_OUTPUT_FOLDER_USE,"Button",
+                    BS_AUTORADIOBUTTON,12,26,74,10
+    EDITTEXT        IDC_OUTPUT_FOLDER_EDIT,12,37,246,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "",IDC_OUTPUT_FOLDER_BROWSE,262,37,16,14,BS_BITMAP
+    GROUPBOX        "Output file &name (extension is ignored)",IDC_STATIC,7,
+                    60,276,51,WS_GROUP
+    CONTROL         "Same as input file name",IDC_OUTPUT_FILENAME_SAME,
+                    "Button",BS_AUTORADIOBUTTON | WS_GROUP,11,69,91,10
+    CONTROL         "Use the one below:",IDC_OUTPUT_FILENAME_USE,"Button",
+                    BS_AUTORADIOBUTTON,11,79,74,10
+    EDITTEXT        IDC_OUTPUT_FILENAME_EDIT,12,90,246,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "",IDC_OUTPUT_FILENAME_BROWSE,262,90,16,14,BS_BITMAP
+    GROUPBOX        "Output file type and extension",IDC_STATIC,7,113,276,33,
+                    WS_GROUP
+    CONTROL         "Audio-Video Interleaved (&AVI)",IDC_OUTPUT_FILETYPE_AVI,
+                    "Button",BS_AUTORADIOBUTTON | WS_GROUP,11,122,109,10
+    CONTROL         "RIFF WAVE audio file (&WAV)",IDC_OUTPUT_FILETYPE_WAV,
+                    "Button",BS_AUTORADIOBUTTON,11,132,107,10
+    LTEXT           "Extension (empty implies default)",IDC_STATIC,127,127,
+                    102,8
+    EDITTEXT        IDC_OUTPUT_FILETYPE_EXT_EDIT,232,125,37,14,
+                    ES_AUTOHSCROLL
+    GROUPBOX        "AVI multiplexing settings",IDC_STATIC_AVI_MUX_SETTINGS,
+                    7,148,276,94
+    GROUPBOX        "&Interleaving mode",IDC_STATIC_INTERLEAVING_MODE,14,158,
+                    262,24,WS_GROUP
+    CONTROL         "None (arrival order)",IDC_INTERLEAVING_MODE_NONE,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,20,168,76,10
+    CONTROL         "Capture-optimized",IDC_INTERLEAVING_MODE_CAPTURE,"Button",
+                    BS_AUTORADIOBUTTON,101,168,72,10
+    CONTROL         "Full (precise interleaving)",IDC_INTERLEAVING_MODE_FULL,
+                    "Button",BS_AUTORADIOBUTTON,178,168,93,10
+    GROUPBOX        "Interleaving parameters",IDC_STATIC_INTERLEAVING_PARAMS,
+                    14,186,127,50
+    RTEXT           "Fre&quency (msec)",IDC_STATIC_INTERLEAVING_FREQUENCY,19,
+                    199,62,8
+    EDITTEXT        IDC_INTERLEAVING_FREQUENCY,84,197,50,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    RTEXT           "Audio &preroll (msec)",IDC_STATIC_INTERLEAVING_PREROLL,
+                    19,217,62,8
+    EDITTEXT        IDC_INTERLEAVING_PREROLL,84,215,50,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    GROUPBOX        "AVI-specific settings",IDC_STATIC_AVI_SPECIFIC_SETTINGS,
+                    149,186,127,50
+    CONTROL         "&Master stream",IDC_AVI_MUX_MASTER_CHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,157,199,57,10
+    EDITTEXT        IDC_AVI_MUX_MASTER_EDIT,219,197,50,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "&Compatibility index",IDC_AVI_MUX_INDEX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,157,217,73,10
+END
+
+IDD_CONFIGURE_AUDIO DIALOG DISCARDABLE  0, 0, 290, 249
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Audio compression"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Audio compression filters",IDC_STATIC,7,8,78,8
+    LISTBOX         IDC_AUDIO_FILTERS,7,17,276,82,LBS_USETABSTOPS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_HSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Audio formats &supported by the filter",IDC_STATIC,7,
+                    101,113,8
+    LISTBOX         IDC_AUDIO_FORMATS,7,110,276,82,LBS_USETABSTOPS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_HSCROLL | 
+                    WS_TABSTOP
+    GROUPBOX        "Format information",IDC_STATIC,7,193,276,50
+    LTEXT           "Format tag",IDC_STATIC,13,203,34,8
+    LTEXT           "0x0000",IDC_AUDIO_FORMAT_TAG,83,203,27,8
+    LTEXT           "Format description",IDC_STATIC,13,212,58,8
+    LTEXT           "",IDC_AUDIO_FORMAT_DESC,83,212,192,8
+    LTEXT           "Block align",IDC_STATIC,13,221,36,8
+    LTEXT           "0000000 bytes",IDC_BLOCK_ALIGN,83,221,70,8
+    LTEXT           "Data rate",IDC_STATIC,13,230,30,8
+    LTEXT           "0000000 bytes/sec",IDC_DATA_RATE,83,230,70,8
+END
+
+IDD_CONFIGURE_VIDEO DIALOG DISCARDABLE  0, 0, 290, 249
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Video compression"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Video compression filters",IDC_STATIC_VIDEO_FILTERS,7,
+                    8,78,8
+    LISTBOX         IDC_VIDEO_FILTERS,7,17,276,138,LBS_USETABSTOPS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_HSCROLL | 
+                    WS_TABSTOP
+    GROUPBOX        "Compression settings",IDC_STATIC_VIDEO_SETTINGS,7,157,
+                    276,85
+    CONTROL         "&Quality:",IDC_VIDEO_QUALITY_CHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,170,35,8
+    CONTROL         "Slider1",IDC_VIDEO_QUALITY_SLIDER,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,49,170,98,11
+    EDITTEXT        IDC_VIDEO_QUALITY_EDIT,148,168,32,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "%",IDC_VIDEO_QUALITY_UNITS,182,170,8,8
+    CONTROL         "&Bitrate:",IDC_VIDEO_BITRATE_CHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,192,170,34,8
+    EDITTEXT        IDC_VIDEO_BITRATE_EDIT,228,168,32,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "kbps",IDC_VIDEO_BITRATE_UNITS,262,170,16,8
+    CONTROL         "&Key frame rate:",IDC_VIDEO_KEYFRAME_CHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,188,59,8
+    EDITTEXT        IDC_VIDEO_KEYFRAME_EDIT,76,186,32,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "&P-frames per key frame:",IDC_VIDEO_PFRAME_CHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,138,188,86,8
+    EDITTEXT        IDC_VIDEO_PFRAME_EDIT,228,186,32,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "&Window size over which an average data rate must be kept:",
+                    IDC_VIDEO_WINDOWSIZE_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,206,201,8
+    EDITTEXT        IDC_VIDEO_WINDOWSIZE_EDIT,228,204,32,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    PUSHBUTTON      "&Configure VCM codec",IDC_VCM_CONFIGURE,13,222,130,14
+    PUSHBUTTON      "&About VCM codec",IDC_VCM_ABOUT,147,222,130,14
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "Converts game media files to AVI/WAV using DirectShow graph builder\0"
+            VALUE "CompanyName", "ANX Software\0"
+            VALUE "FileDescription", "Convertor application for game media formats\0"
+            VALUE "FileVersion", "1, 0, 0, 0\0"
+            VALUE "InternalName", "GMFConvert\0"
+            VALUE "LegalCopyright", "Copyright (C) 2004 ANX Software\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "GMFConvert.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Game Media Formats Suit\0"
+            VALUE "ProductVersion", "1, 0, 0, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 161
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 99
+    END
+
+    IDD_OPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 233
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 56
+    END
+
+    IDD_CONFIGURE_FILE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 283
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 242
+    END
+
+    IDD_CONFIGURE_AUDIO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 283
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 242
+    END
+
+    IDD_CONFIGURE_VIDEO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 283
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 242
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "GMFConvert\n\nGMFCon\n\n\nGMFConvert.Document\nGMFCon Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "GMFConvert"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CUT             "Remove the selection\nRemove"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    IDS_FAILED              "Failed"
+    IDS_SUCCEEDED           "Converted"
+    IDS_RUNNING             "Running"
+    IDS_WAITING             "Waiting"
+    IDS_PAUSED              "Paused"
+    IDS_STOPPED             "Stopped"
+    IDS_PERCENTAGE          " (%s %%)"
+    IDS_POSITION            " at %s"
+    IDS_COM_INIT_FAILED     "Failed to initialize COM.\nReason: %s"
+    IDS_REG_KEY             "ANX Software\\Game Media Formats Suit"
+    IDS_OPTION_DURATION_ADD "Get Duration On AddFile"
+    IDS_BROWSE_DIR_ADD      "Select folder to add files from"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_CLEAR_LIST           "Clear the conversoin list\nClear List"
+    ID_ADD_FILE             "Add file(s) to the conversion list\nAdd File"
+    ID_ADD_DIR              "Add all files in a directory to the conversion list\nAdd Directory"
+    ID_SELECT_ALL           "Select all items in the list\nSelect All"
+    ID_INVERT_SEL           "Invert selection in the list\nInvert Selection"
+    ID_RUN_CONVERT          "Run conversion\nRun"
+    ID_PAUSE_CONVERT        "Pause conversion\nPause"
+    ID_STOP_CONVERT         "Stop conversion\nStop"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_UNSELECT_ALL         "Unselect all items in the list\nUnselect All"
+    ID_CONFIG_CONVERT       "Configure conversion\nConfigure"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_OPTIONS              "Set program options\nOptions"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_OPTION_RECURSIVE_ADDDIR "Recursive AddDir"
+    IDS_CONFIGURE_TITLE     "Configure conversion"
+    IDS_BROWSE_DIR_DEST     "Select folder for destination file(s)"
+    IDS_FILTER_NO_PROPERTY_BAG "<Failed to access filter's property bag>"
+    IDS_FILTER_NO_FRIENDLY_NAME "<Failed to get filter's friendly name>"
+    IDS_AUDIO_NULL_FILTER   "<Audio pass-through>"
+    IDS_VIDEO_NULL_FILTER   "<Video pass-through>"
+    IDS_FILTER_NO_OBJECT    "Failed to create a filter object: %s"
+    IDS_FILTER_NO_PIN_ENUM  "Failed to enumerate the filter pins: %s"
+    IDS_FILTER_NO_CONFIG    "Failed to get stream configuration interface"
+    IDS_FILTER_NO_CAPS      "Failed to get stream capabilities: %s"
+    IDS_AUDIO_RAW_FILTER    "<No compression (PCM)>"
+    IDS_VIDEO_RAW_FILTER    "<No compression (RGB or YUV)>"
+    IDS_AUDIO_NULL_FILTER_DESC "<Direct source audio stream copy>"
+    IDS_VIDEO_NULL_FILTER_DESC "<Direct source video stream copy>"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_AUDIO_RAW_FILTER_DESC "<Uncompressed raw PCM audio>"
+    IDS_VIDEO_RAW_FILTER_DESC "<Uncompressed raw RGB or YUV video>"
+    IDS_FORMAT_UNEXPECTED_MEDIA_TYPE "<Unexpected media type>"
+    IDS_FORMAT_UNEXPECTED_FORMAT_TYPE "<Unexpected format type>"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\GMFConvert.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

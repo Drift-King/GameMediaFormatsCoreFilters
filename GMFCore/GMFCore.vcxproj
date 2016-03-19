@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <ProjectGuid>{2D25B127-9FF0-4DFC-8CDC-4321D2526818}</ProjectGuid>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;GMFCORE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Debug\GMFCore.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+      <CallingConvention>Cdecl</CallingConvention>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <AdditionalIncludeDirectories>..\BaseClasses</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Debug\GMFCore.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\GMFCore.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkDLL>true</LinkDLL>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <ModuleDefinitionFile>GMFCore.def</ModuleDefinitionFile>
+      <OutputFile>Debug/GMFCore.ax</OutputFile>
+      <ImportLibrary>.\Debug\GMFCore.lib</ImportLibrary>
+      <AdditionalDependencies>strmbasd.lib;strmiids.lib;comctl32.lib;winmm.lib;vcruntimed.lib;msvcrtd.lib;ucrtd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <StackReserveSize>2097152</StackReserveSize>
+      <StackCommitSize>2097152</StackCommitSize>
+      <EntryPointSymbol>DllEntryPoint%4012</EntryPointSymbol>
+      <AdditionalLibraryDirectories>..\BaseClasses\Debug_MBCS</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;GMFCORE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Release\GMFCore.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+      <AdditionalIncludeDirectories>..\BaseClasses</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Release\GMFCore.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\GMFCore.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkDLL>true</LinkDLL>
+      <SubSystem>Windows</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <ModuleDefinitionFile>GMFCore.def</ModuleDefinitionFile>
+      <OutputFile>Release/GMFCore.ax</OutputFile>
+      <ImportLibrary>.\Release\GMFCore.lib</ImportLibrary>
+      <AdditionalDependencies>strmbase.lib;strmiids.lib;comctl32.lib;winmm.lib;vcruntime.lib;msvcrt.lib;ucrt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <StackReserveSize>2097152</StackReserveSize>
+      <StackCommitSize>2097152</StackCommitSize>
+      <EntryPointSymbol>DllEntryPoint%4012</EntryPointSymbol>
+      <AdditionalLibraryDirectories>..\BaseClasses\Release_MBCS</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ADPCMInterleaver.cpp" />
+    <ClCompile Include="APCParser.cpp" />
+    <ClCompile Include="BaseParser.cpp" />
+    <ClCompile Include="BasePlainParser.cpp" />
+    <ClCompile Include="CINSplitter.cpp" />
+    <ClCompile Include="CINVideoDecompressor.cpp" />
+    <ClCompile Include="ContinuousIMAADPCMDecompressor.cpp" />
+    <ClCompile Include="FilterOptions.cpp" />
+    <ClCompile Include="FSTSplitter.cpp" />
+    <ClCompile Include="GMFCore.cpp" />
+    <ClCompile Include="H263Parser.cpp" />
+    <ClCompile Include="HNMSplitter.cpp" />
+    <ClCompile Include="HNMVideoDecompressor.cpp" />
+    <ClCompile Include="MVEADPCMDecompressor.cpp" />
+    <ClCompile Include="MVESplitter.cpp" />
+    <ClCompile Include="MVEVideoDecompressor.cpp" />
+    <ClCompile Include="ROQADPCMDecompressor.cpp" />
+    <ClCompile Include="ROQSplitter.cpp" />
+    <ClCompile Include="ROQVideoDecompressor.cpp" />
+    <ClCompile Include="VQASplitter.cpp" />
+    <ClCompile Include="VQAVideoDecompressor.cpp" />
+    <ClCompile Include="WSADPCMDecompressor.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GMFCore.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ADPCMInterleaver.h" />
+    <ClInclude Include="APCGUID.H" />
+    <ClInclude Include="APCParser.h" />
+    <ClInclude Include="APCSpecs.h" />
+    <ClInclude Include="BaseParser.h" />
+    <ClInclude Include="BaseParserConfig.h" />
+    <ClInclude Include="BasePlainParser.h" />
+    <ClInclude Include="CINGUID.h" />
+    <ClInclude Include="CINSpecs.h" />
+    <ClInclude Include="CINSplitter.h" />
+    <ClInclude Include="CINVideoDecompressor.h" />
+    <ClInclude Include="ContinuousIMAADPCM.h" />
+    <ClInclude Include="ContinuousIMAADPCMDecompressor.h" />
+    <ClInclude Include="FilterOptions.h" />
+    <ClInclude Include="FSTGUID.h" />
+    <ClInclude Include="FSTSpecs.h" />
+    <ClInclude Include="FSTSplitter.h" />
+    <ClInclude Include="HNMGUID.h" />
+    <ClInclude Include="HNMSpecs.h" />
+    <ClInclude Include="HNMSplitter.h" />
+    <ClInclude Include="HNMSplitterConfig.h" />
+    <ClInclude Include="HNMVideoDecompressor.h" />
+    <ClInclude Include="HNMVideoDecompressorConfig.h" />
+    <ClInclude Include="MVEADPCMDecompressor.h" />
+    <ClInclude Include="MVEGUID.h" />
+    <ClInclude Include="MVESpecs.h" />
+    <ClInclude Include="MVESplitter.h" />
+    <ClInclude Include="MVEVideoDecompressor.h" />
+    <ClInclude Include="ROQADPCMDecompressor.h" />
+    <ClInclude Include="ROQGUID.h" />
+    <ClInclude Include="ROQSpecs.h" />
+    <ClInclude Include="ROQSplitter.h" />
+    <ClInclude Include="ROQSplitterConfig.h" />
+    <ClInclude Include="ROQVideoDecompressor.h" />
+    <ClInclude Include="VMDGUID.h" />
+    <ClInclude Include="VMDSpecs.h" />
+    <ClInclude Include="VMDSplitter.h" />
+    <ClInclude Include="VQAGUID.h" />
+    <ClInclude Include="VQASpecs.h" />
+    <ClInclude Include="VQASplitter.h" />
+    <ClInclude Include="VQAVideoDecompressor.h" />
+    <ClInclude Include="WSADPCM.h" />
+    <ClInclude Include="WSADPCMDecompressor.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

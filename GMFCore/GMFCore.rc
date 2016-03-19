@@ -1,0 +1,619 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+//#include "ver.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""ver.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK 0x30003fL
+#ifdef _DEBUG
+ FILEFLAGS 0xbL
+#else
+ FILEFLAGS 0xaL
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "ActiveMovie", "Filter dll\0"
+            VALUE "Comments", "Parser/splitter and decoder filters for game media formats rendering\0"
+            VALUE "CompanyName", "ANX Software\0"
+            VALUE "FileDescription", "Game Media Formats Core Filters\0"
+            VALUE "FileVersion", "1, 0, 0, 0\0"
+            VALUE "InternalName", "GMFCore\0"
+            VALUE "LegalCopyright", "Copyright (C) 2004 ANX Software\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OLESelfRegister", "AM20\0"
+            VALUE "OriginalFilename", "GMFCore.ax\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Game Media Formats Suit\0"
+            VALUE "ProductVersion", "1, 0, 0, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CIMAADPCMDECOMPRESSORPAGE DIALOG DISCARDABLE  0, 0, 188, 146
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Credits",IDC_STATIC,7,2,174,40,BS_LEFT
+    LTEXT           "ANX Continuous IMA ADPCM Decompressor v1.00\nCopyright© 2004 ANX Software\nAuthor: Valery V. Anisimovsky",
+                    IDC_STATIC,13,12,162,24,NOT WS_GROUP
+    GROUPBOX        "Comments",IDC_STATIC,7,43,174,63,BS_LEFT
+    LTEXT           "This DirectShow filter is a part of the Game Media Formats Suit core filters package.\nIt is required since most IMA ADPCM based game media formats use continuous IMA ADPCM stream which does not comply with the IMA ADPCM specification.",
+                    IDC_STATIC,13,53,162,48,NOT WS_GROUP
+    GROUPBOX        "License",IDC_STATIC,7,108,174,32,BS_LEFT
+    LTEXT           "This filter is freeware. There is NO WARRANTY for this software, you use it at your own risk.",
+                    IDC_STATIC,13,118,162,16,NOT WS_GROUP
+END
+
+IDD_HNMVIDEODECOMPRESSORPAGE DIALOG DISCARDABLE  0, 0, 316, 149
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Credits",IDC_STATIC,7,2,174,40,BS_LEFT
+    LTEXT           "ANX HNM Video Decompressor v1.00\nCopyright© 2004 ANX Software\nAuthor: Valery V. Anisimovsky",
+                    IDC_STATIC,13,12,161,24,NOT WS_GROUP
+    GROUPBOX        "Comments",IDC_STATIC,7,43,174,74,BS_LEFT
+    LTEXT           "This DirectShow filter is a part of the Game Media Formats Suit core filters package.",
+                    IDC_STATIC,13,53,161,16,NOT WS_GROUP
+    LTEXT           "It uses Cryo Interactive HNM decoder DLLs, so make sure all of them are present in the directory the filter resides in. The necessary DLLs are called like ""CM6_<width>x16.dll"" where <width> is 512, 640, 800 and 1024.",
+                    IDC_STATIC,13,72,161,40,NOT WS_GROUP
+    GROUPBOX        "License",IDC_STATIC,7,118,302,25,BS_LEFT
+    LTEXT           "This filter is freeware. There is NO WARRANTY for this software, you use it at your own risk.",
+                    IDC_STATIC,13,129,290,8,NOT WS_GROUP
+    GROUPBOX        "RGB video output",IDC_STATIC,185,2,124,115,BS_LEFT
+    CONTROL         "&Require color space converter",IDC_REQUIRECONVERTER,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,191,13,107,10
+    LTEXT           "When checked, forces the filter to require color space converter filter to be connected to its output pin.",
+                    IDC_STATIC,191,25,111,24,NOT WS_GROUP
+    LTEXT           "You should use this option if you experience choppy HNM video playback (which is the case when your desktop color depth matches that of the HNM video being played and your video card does not support RGB overlays).",
+                    IDC_STATIC,191,54,111,56,NOT WS_GROUP
+END
+
+IDD_APCPARSERPAGE DIALOG DISCARDABLE  0, 0, 286, 105
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Credits",IDC_STATIC,7,2,112,64,BS_LEFT
+    LTEXT           "ANX APC Parser v1.00\nCopyright© 2004 ANX Software\nAuthor: Valery V. Anisimovsky",
+                    IDC_STATIC,13,12,100,24,NOT WS_GROUP
+    GROUPBOX        "Comments",IDC_STATIC,124,2,155,64,BS_LEFT
+    LTEXT           "This DirectShow filter is a part of the Game Media Formats Suit core filters package.\nIt is used to play Cryo Interactive APC audio files and also can be used by the HNM splitter filter to play external APC soundtracks for Cryo Interactive HNM video files.",
+                    IDC_STATIC,130,12,143,48,NOT WS_GROUP
+    GROUPBOX        "License",IDC_STATIC,7,67,272,32,BS_LEFT
+    LTEXT           "This filter is freeware. There is NO WARRANTY for this software, you use it at your own risk.",
+                    IDC_STATIC,13,77,260,16,NOT WS_GROUP
+END
+
+IDD_HNMSPLITTERPAGE DIALOG DISCARDABLE  0, 0, 286, 168
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Credits",IDC_STATIC,7,2,112,58,BS_LEFT
+    LTEXT           "ANX HNM Splitter v1.00\nCopyright© 2004 ANX Software\nAuthor: Valery V. Anisimovsky",
+                    IDC_STATIC,13,12,100,24,NOT WS_GROUP
+    GROUPBOX        "Comments",IDC_STATIC,124,2,155,58,BS_LEFT
+    LTEXT           "This DirectShow filter is a part of the Game Media Formats Suit core filters package.\nIt is used to play Cryo Interactive HNM/HNS video files. When necessary, it uses APC parser filter for external APC soundtrack.",
+                    IDC_STATIC,130,12,143,42,NOT WS_GROUP
+    GROUPBOX        "License",IDC_STATIC,7,61,272,32,BS_LEFT
+    LTEXT           "This filter is freeware. There is NO WARRANTY for this software, you use it at your own risk.",
+                    IDC_STATIC,13,71,260,16,NOT WS_GROUP
+    GROUPBOX        "External APC soundtrack",IDC_STATIC,7,94,272,69,BS_LEFT
+    CONTROL         "&Use external APC file",IDC_USEEXTERNALAPC,"Button",
+                    BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,13,105,79,10
+    GROUPBOX        "&Path to APC soundtracks",IDC_EXTERNALAPCPATHFRAME,13,
+                    118,132,29
+    EDITTEXT        IDC_EXTERNALAPCPATH,18,128,122,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Defaults",IDC_DEFAULTS,95,103,50,14
+    LTEXT           "Some HNM files contain no soundtrack while the external APC audio files serve as the soundtracks for such HNM files. These settings control the usage of such external APC soundtracks by the filter. APC path must be relative to HNM files location.",
+                    IDC_STATIC,150,102,123,56,NOT WS_GROUP
+END
+
+IDD_BASEPARSERPAGE DIALOG DISCARDABLE  0, 0, 286, 261
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Input pin",IDC_STATIC,7,2,272,54,BS_LEFT
+    LTEXT           "Number of &input buffers:",IDC_STATIC,13,13,75,8
+    RTEXT           "",IDC_INPUTBUFFERSTEXT,95,13,18,10,SS_SUNKEN
+    CONTROL         "Slider1",IDC_INPUTBUFFERS,"msctls_trackbar32",
+                    TBS_AUTOTICKS | WS_TABSTOP,10,23,107,12
+    CONTROL         "&Synchronous input",IDC_SYNCINPUT,"Button",
+                    BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,13,41,72,10
+    LTEXT           "Bigger number of input buffers may help to achieve smoother streaming, but it requires more memory. Synchronous input should only be used when the asynchronous setting causes choppy or erratic streaming.",
+                    IDC_STATIC,120,10,153,40
+    GROUPBOX        "Output &pin:",IDC_STATIC1,7,62,272,120
+    COMBOBOX        IDC_PINNAME,49,60,94,44,CBS_DROPDOWNLIST | 
+                    CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Number of &output buffers:",IDC_STATIC2,13,77,80,8
+    RTEXT           "",IDC_OUTPUTBUFFERSTEXT,95,77,18,10,SS_SUNKEN
+    CONTROL         "Slider1",IDC_OUTPUTBUFFERS,"msctls_trackbar32",
+                    TBS_AUTOTICKS | WS_TABSTOP,10,87,107,12
+    LTEXT           "Bigger number of output buffers may help to achieve smoother streaming, but it requires more memory. The optimal value depends on the pin type and the number of input buffers.",
+                    IDC_STATIC3,120,77,153,32
+    CONTROL         "&Auto queue",IDC_AUTOQUEUE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,110,53,10
+    CONTROL         "&Queue",IDC_QUEUE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    68,110,37,10
+    LTEXT           "Auto queue option instructs the pin to perform asynchronous streaming (queueing) only when the peer input pin might block.",
+                    IDC_STATIC4,120,110,153,24
+    LTEXT           "&Batch size:",IDC_STATIC5,13,136,35,8
+    RTEXT           "",IDC_BATCHSIZETEXT,95,136,18,10,SS_SUNKEN
+    CONTROL         "Slider1",IDC_BATCHSIZE,"msctls_trackbar32",
+                    TBS_AUTOTICKS | WS_TABSTOP,10,146,107,12
+    CONTROL         "Batch &exact",IDC_BATCHEXACT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,165,54,10
+    LTEXT           "Bigger batch size may help to achieve smoother streaming. Batch exact option specifies whether to use exact batch sizes. Using this option along with the batch size bigger than the number of output buffers will render the pin inoperative!",
+                    IDC_STATIC6,120,136,153,40
+    GROUPBOX        "Format recognition:",IDC_STATIC,7,188,272,49,BS_LEFT
+    COMBOBOX        IDC_TYPENAME,74,186,148,44,CBS_DROPDOWNLIST | 
+                    CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Patterns:",IDC_STATIC,13,204,29,8
+    PUSHBUTTON      "Register",IDC_PATTERNS_REGISTER,51,201,32,14
+    PUSHBUTTON      "Clear",IDC_PATTERNS_UNREGISTER,85,201,32,14
+    LTEXT           "Registering patterns allows DirectShow to recognize supported file format by file contents.",
+                    IDC_STATIC,120,201,153,16
+    LTEXT           "Extensions:",IDC_STATIC,13,221,37,8
+    PUSHBUTTON      "Register",IDC_EXTENSIONS_REGISTER,51,218,32,14
+    PUSHBUTTON      "Clear",IDC_EXTENSIONS_UNREGISTER,85,218,32,14
+    LTEXT           "",IDC_EXTENSIONS,120,219,153,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    PUSHBUTTON      "&Defaults",IDC_DEFAULTS,229,242,50,14
+END
+
+IDD_CINSPLITTERPAGE DIALOG DISCARDABLE  0, 0, 286, 112
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Credits",IDC_STATIC,7,2,140,72,BS_LEFT
+    LTEXT           "ANX CIN Splitter v1.00\nCopyright© 2004 ANX Software\nAuthor: Valery V. Anisimovsky\nThe filter is based on the CIN specs written by Dr. Tim Ferguson (timf@csse.monash.edu.au):\nhttp://www.csse.monash.edu.au/~timf/",
+                    IDC_STATIC,13,12,127,56,NOT WS_GROUP
+    GROUPBOX        "Comments",IDC_STATIC,153,2,126,72,BS_LEFT
+    LTEXT           "This DirectShow filter is a part of the Game Media Formats Suit core filters package.\nIt is used to play Id Software CIN video files.",
+                    IDC_STATIC,159,12,113,40,NOT WS_GROUP
+    GROUPBOX        "License",IDC_STATIC,7,75,272,32,BS_LEFT
+    LTEXT           "This filter is freeware. There is NO WARRANTY for this software, you use it at your own risk.",
+                    IDC_STATIC,13,85,260,16,NOT WS_GROUP
+END
+
+IDD_CINVIDEODECOMPRESSORPAGE DIALOG DISCARDABLE  0, 0, 200, 146
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Credits",IDC_STATIC,7,2,186,64,BS_LEFT
+    LTEXT           "ANX CIN Video Decompressor v1.00\nCopyright© 2004 ANX Software\nAuthor: Valery V. Anisimovsky\nThe filter uses Huffman decoder from xcinplay source code by Dr. Tim Ferguson (timf@csse.monash.edu.au):\nhttp://www.csse.monash.edu.au/~timf/",
+                    IDC_STATIC,13,12,173,48,NOT WS_GROUP
+    GROUPBOX        "Comments",IDC_STATIC,7,67,186,40,BS_LEFT
+    LTEXT           "This DirectShow filter is a part of the Game Media Formats Suit core filters package.\nIt is used to play Id Software CIN video files.",
+                    IDC_STATIC,13,77,173,24,NOT WS_GROUP
+    GROUPBOX        "License",IDC_STATIC,7,108,186,32,BS_LEFT
+    LTEXT           "This filter is freeware. There is NO WARRANTY for this software, you use it at your own risk.",
+                    IDC_STATIC,13,118,173,16,NOT WS_GROUP
+END
+
+IDD_ROQSPLITTERPAGE DIALOG DISCARDABLE  0, 0, 286, 182
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Credits",IDC_STATIC,7,2,144,72,BS_LEFT
+    LTEXT           "ANX ROQ Splitter v1.00\nCopyright© 2004 ANX Software\nAuthor: Valery V. Anisimovsky\nThe filter is based on the ROQ specs written by Dr. Tim Ferguson (timf@csse.monash.edu.au):\nhttp://www.csse.monash.edu.au/~timf/",
+                    IDC_STATIC,13,12,132,56,NOT WS_GROUP
+    GROUPBOX        "Comments",IDC_STATIC,157,2,122,72,BS_LEFT
+    LTEXT           "This DirectShow filter is a part of the Game Media Formats Suit core filters package.\nIt is used to play Id Software ROQ video files. When necessary, it uses MPEG-1 stream splitter filter for external MP3 soundtrack.",
+                    IDC_STATIC,163,12,109,56,NOT WS_GROUP
+    GROUPBOX        "License",IDC_STATIC,7,75,272,32,BS_LEFT
+    LTEXT           "This filter is freeware. There is NO WARRANTY for this software, you use it at your own risk.",
+                    IDC_STATIC,13,85,260,16,NOT WS_GROUP
+    GROUPBOX        "External MP3 soundtrack",IDC_STATIC,7,108,272,69,
+                    BS_LEFT
+    CONTROL         "&Use external MP3 file",IDC_USEEXTERNALMP3,"Button",
+                    BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,13,119,80,10
+    GROUPBOX        "&Path to MP3 soundtracks",IDC_EXTERNALMP3PATHFRAME,13,
+                    132,132,29
+    EDITTEXT        IDC_EXTERNALMP3PATH,18,142,122,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Defaults",IDC_DEFAULTS,95,117,50,14
+    LTEXT           "Some ROQ files contain no soundtrack while the external MP3 audio files serve as the soundtracks for such ROQ files. These settings control the usage of such external MP3 soundtracks by the filter. MP3 path must be relative to ROQ files location.",
+                    IDC_STATIC,150,116,123,56,NOT WS_GROUP
+END
+
+IDD_ROQADPCMDECOMPRESSORPAGE DIALOG DISCARDABLE  0, 0, 176, 146
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Credits",IDC_STATIC,7,2,162,64,BS_LEFT
+    LTEXT           "ANX ROQ ADPCM Decompressor v1.00\nCopyright© 2004 ANX Software\nAuthor: Valery V. Anisimovsky\nThe filter is based on the ROQ specs written by Dr. Tim Ferguson (timf@csse.monash.edu.au):\nhttp://www.csse.monash.edu.au/~timf/",
+                    IDC_STATIC,13,12,150,48,NOT WS_GROUP
+    GROUPBOX        "Comments",IDC_STATIC,7,67,162,40,BS_LEFT
+    LTEXT           "This DirectShow filter is a part of the Game Media Formats Suit core filters package.\nIt is used to play Id Software ROQ video files.",
+                    IDC_STATIC,13,77,150,24,NOT WS_GROUP
+    GROUPBOX        "License",IDC_STATIC,7,108,162,32,BS_LEFT
+    LTEXT           "This filter is freeware. There is NO WARRANTY for this software, you use it at your own risk.",
+                    IDC_STATIC,13,118,150,16,NOT WS_GROUP
+END
+
+IDD_ROQVIDEODECOMPRESSORPAGE DIALOG DISCARDABLE  0, 0, 194, 146
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Credits",IDC_STATIC,7,2,180,64,BS_LEFT
+    LTEXT           "ANX ROQ Video Decompressor v1.00\nCopyright© 2004 ANX Software\nAuthor: Valery V. Anisimovsky\nThe filter uses ROQ video decoder from roqvideo.c by Dr. Tim Ferguson (timf@csse.monash.edu.au):\nhttp://www.csse.monash.edu.au/~timf/",
+                    IDC_STATIC,13,12,167,48,NOT WS_GROUP
+    GROUPBOX        "Comments",IDC_STATIC,7,67,180,40,BS_LEFT
+    LTEXT           "This DirectShow filter is a part of the Game Media Formats Suit core filters package.\nIt is used to play Id Software ROQ video files.",
+                    IDC_STATIC,13,77,167,24,NOT WS_GROUP
+    GROUPBOX        "License",IDC_STATIC,7,108,180,32,BS_LEFT
+    LTEXT           "This filter is freeware. There is NO WARRANTY for this software, you use it at your own risk.",
+                    IDC_STATIC,13,118,167,16,NOT WS_GROUP
+END
+
+IDD_VMDSPLITTERPAGE DIALOG DISCARDABLE  0, 0, 286, 105
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Credits",IDC_STATIC,7,2,159,64,BS_LEFT
+    LTEXT           "ANX VMD Splitter v1.00\nCopyright© 2004 ANX Software\nAuthor: Valery V. Anisimovsky\nThe filter is based on the VMD specs written by Mike Melanson (melanson@pcisys.net) and Vladimir ""VAG"" Gneushev (vagsoft@mail.ru)",
+                    IDC_STATIC,13,12,146,48,NOT WS_GROUP
+    GROUPBOX        "Comments",IDC_STATIC,171,2,108,64,BS_LEFT
+    LTEXT           "This DirectShow filter is a part of the Game Media Formats Suit core filters package.\nIt is used to play Sierra On-Line VMD video files.",
+                    IDC_STATIC,177,12,95,40,NOT WS_GROUP
+    GROUPBOX        "License",IDC_STATIC,7,67,272,32,BS_LEFT
+    LTEXT           "This filter is freeware. There is NO WARRANTY for this software, you use it at your own risk.",
+                    IDC_STATIC,13,77,260,16,NOT WS_GROUP
+END
+
+IDD_VQASPLITTERPAGE DIALOG DISCARDABLE  0, 0, 286, 97
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Credits",IDC_STATIC,7,2,154,56,BS_LEFT
+    LTEXT           "ANX VQA Splitter v1.00\nCopyright© 2004 ANX Software\nAuthor: Valery V. Anisimovsky\nThe filter is based on the VQA specs written by Gordan Ugarkovic (ugordan@yahoo.com)",
+                    IDC_STATIC,13,12,141,40,NOT WS_GROUP
+    GROUPBOX        "Comments",IDC_STATIC,166,2,113,56,BS_LEFT
+    LTEXT           "This DirectShow filter is a part of the Game Media Formats Suit core filters package.\nIt is used to play Westwood Studios VQA video files.",
+                    IDC_STATIC,172,12,101,40,NOT WS_GROUP
+    GROUPBOX        "License",IDC_STATIC,7,59,272,32,BS_LEFT
+    LTEXT           "This filter is freeware. There is NO WARRANTY for this software, you use it at your own risk.",
+                    IDC_STATIC,13,69,260,16,NOT WS_GROUP
+END
+
+IDD_FSTSPLITTERPAGE DIALOG DISCARDABLE  0, 0, 286, 80
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Credits",IDC_STATIC,7,2,114,40,BS_LEFT
+    LTEXT           "ANX FST Splitter v1.00\nCopyright© 2004 ANX Software\nAuthor: Valery V. Anisimovsky",
+                    IDC_STATIC,13,12,101,24,NOT WS_GROUP
+    GROUPBOX        "Comments",IDC_STATIC,126,2,153,40,BS_LEFT
+    LTEXT           "This DirectShow filter is a part of the Game Media Formats Suit core filters package.\nIt is used to play FutureVision FST video files.",
+                    IDC_STATIC,132,12,142,24,NOT WS_GROUP
+    GROUPBOX        "License",IDC_STATIC,7,43,272,32,BS_LEFT
+    LTEXT           "This filter is freeware. There is NO WARRANTY for this software, you use it at your own risk.",
+                    IDC_STATIC,13,53,260,16,NOT WS_GROUP
+END
+
+IDD_ADPCMINTERLEAVERPAGE DIALOG DISCARDABLE  0, 0, 160, 142
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Credits",IDC_STATIC,7,2,146,40,BS_LEFT
+    LTEXT           "ANX ADPCM Interleaver v1.00\nCopyright© 2004 ANX Software\nAuthor: Valery V. Anisimovsky",
+                    IDC_STATIC,13,12,134,24,NOT WS_GROUP
+    GROUPBOX        "Comments",IDC_STATIC,7,43,146,56,BS_LEFT
+    LTEXT           "This DirectShow filter is a part of the Game Media Formats Suit core filters package.\nIt is required since some ADPCM based game media formats use non-standard multichannel data nibble interleaving.",
+                    IDC_STATIC,13,53,134,40,NOT WS_GROUP
+    GROUPBOX        "License",IDC_STATIC,7,100,146,37,BS_LEFT
+    LTEXT           "This filter is freeware. There is NO WARRANTY for this software, you use it at your own risk.",
+                    IDC_STATIC,13,110,134,24,NOT WS_GROUP
+END
+
+IDD_WSADPCMDECOMPRESSORPAGE DIALOG DISCARDABLE  0, 0, 176, 130
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Credits",IDC_STATIC,7,2,162,40,BS_LEFT
+    LTEXT           "ANX WS ADPCM Decompressor v1.00\nCopyright© 2004 ANX Software\nAuthor: Valery V. Anisimovsky",
+                    IDC_STATIC,13,12,150,24,NOT WS_GROUP
+    GROUPBOX        "Comments",IDC_STATIC,7,43,162,48,BS_LEFT
+    LTEXT           "This DirectShow filter is a part of the Game Media Formats Suit core filters package.\nIt is used to play Westwood Studios VQA video files and AUD audio files.",
+                    IDC_STATIC,13,53,150,32,NOT WS_GROUP
+    GROUPBOX        "License",IDC_STATIC,7,92,162,32,BS_LEFT
+    LTEXT           "This filter is freeware. There is NO WARRANTY for this software, you use it at your own risk.",
+                    IDC_STATIC,13,102,150,16,NOT WS_GROUP
+END
+
+IDD_VQAVIDEODECOMPRESSORPAGE DIALOG DISCARDABLE  0, 0, 194, 186
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Credits",IDC_STATIC,7,2,180,104,BS_LEFT
+    LTEXT           "ANX VQA Video Decompressor v1.00\nCopyright© 2004 ANX Software\nAuthor: Valery V. Anisimovsky",
+                    IDC_STATIC,13,12,167,24,NOT WS_GROUP
+    LTEXT           "The filter is based on the VQA specs written by Gordan Ugarkovic (ugordan@yahoo.com) and uses Format80 decoder source code from vqavideo.c by Mike Melanson (melanson@pcisys.net):\nhttp://www.pcisys.net/~melanson/codecs/",
+                    IDC_STATIC,13,36,167,40,NOT WS_GROUP
+    LTEXT           "(you can get the specs and source code on this site)\nvqavideo.c is a part of the ffmpeg project:\nhttp://ffmpeg.sourceforge.net",
+                    IDC_STATIC,13,76,167,24,NOT WS_GROUP
+    GROUPBOX        "Comments",IDC_STATIC,7,107,180,40,BS_LEFT
+    LTEXT           "This DirectShow filter is a part of the Game Media Formats Suit core filters package.\nIt is used to play Westwood Studios VQA video files.",
+                    IDC_STATIC,13,117,167,24,NOT WS_GROUP
+    GROUPBOX        "License",IDC_STATIC,7,148,180,32,BS_LEFT
+    LTEXT           "This filter is freeware. There is NO WARRANTY for this software, you use it at your own risk.",
+                    IDC_STATIC,13,158,167,16,NOT WS_GROUP
+END
+
+IDD_MVESPLITTERPAGE DIALOG DISCARDABLE  0, 0, 286, 97
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Credits",IDC_STATIC,7,2,154,56,BS_LEFT
+    LTEXT           "ANX MVE Splitter v1.00\nCopyright© 2004 ANX Software\nAuthor: Valery V. Anisimovsky\nThe filter is based on the MVE specs written by <don't-know-whom> (<don't-know-email>)",
+                    IDC_STATIC,13,12,141,40,NOT WS_GROUP
+    GROUPBOX        "Comments",IDC_STATIC,166,2,113,56,BS_LEFT
+    LTEXT           "This DirectShow filter is a part of the Game Media Formats Suit core filters package.\nIt is used to play Interplay Productions MVE video files.",
+                    IDC_STATIC,172,12,101,40,NOT WS_GROUP
+    GROUPBOX        "License",IDC_STATIC,7,59,272,32,BS_LEFT
+    LTEXT           "This filter is freeware. There is NO WARRANTY for this software, you use it at your own risk.",
+                    IDC_STATIC,13,69,260,16,NOT WS_GROUP
+END
+
+IDD_MVEADPCMDECOMPRESSORPAGE DIALOG DISCARDABLE  0, 0, 176, 130
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Credits",IDC_STATIC,7,2,162,40,BS_LEFT
+    LTEXT           "ANX MVE ADPCM Decompressor v1.00\nCopyright© 2004 ANX Software\nAuthor: Valery V. Anisimovsky",
+                    IDC_STATIC,13,12,150,24,NOT WS_GROUP
+    GROUPBOX        "Comments",IDC_STATIC,7,43,162,48,BS_LEFT
+    LTEXT           "This DirectShow filter is a part of the Game Media Formats Suit core filters package.\nIt is used to play Interplay Productions MVE video files.",
+                    IDC_STATIC,13,53,150,32,NOT WS_GROUP
+    GROUPBOX        "License",IDC_STATIC,7,92,162,32,BS_LEFT
+    LTEXT           "This filter is freeware. There is NO WARRANTY for this software, you use it at your own risk.",
+                    IDC_STATIC,13,102,150,16,NOT WS_GROUP
+END
+
+IDD_MVEVIDEODECOMPRESSORPAGE DIALOG DISCARDABLE  0, 0, 200, 146
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Credits",IDC_STATIC,7,2,186,64,BS_LEFT
+    LTEXT           "ANX MVE Video Decompressor v1.00\nCopyright© 2004 ANX Software\nAuthor: Valery V. Anisimovsky\nThe filter uses MVE decoder from libmve source code by <don't-know-whom> (<don't-know-email>):\nhttp://www.icculus.org/d2x/ (D2X Project)",
+                    IDC_STATIC,13,12,173,48,NOT WS_GROUP
+    GROUPBOX        "Comments",IDC_STATIC,7,67,186,40,BS_LEFT
+    LTEXT           "This DirectShow filter is a part of the Game Media Formats Suit core filters package.\nIt is used to play Interplay Productions MVE video files.",
+                    IDC_STATIC,13,77,173,24,NOT WS_GROUP
+    GROUPBOX        "License",IDC_STATIC,7,108,186,32,BS_LEFT
+    LTEXT           "This filter is freeware. There is NO WARRANTY for this software, you use it at your own risk.",
+                    IDC_STATIC,13,118,173,16,NOT WS_GROUP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_HNMVIDEODECOMPRESSORPAGE, DIALOG
+    BEGIN
+        RIGHTMARGIN, 309
+    END
+
+    IDD_APCPARSERPAGE, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 99
+    END
+
+    IDD_HNMSPLITTERPAGE, DIALOG
+    BEGIN
+        RIGHTMARGIN, 279
+        BOTTOMMARGIN, 167
+    END
+
+    IDD_CINSPLITTERPAGE, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 111
+    END
+
+    IDD_CINVIDEODECOMPRESSORPAGE, DIALOG
+    BEGIN
+        RIGHTMARGIN, 199
+        BOTTOMMARGIN, 122
+    END
+
+    IDD_ROQSPLITTERPAGE, DIALOG
+    BEGIN
+        RIGHTMARGIN, 279
+        BOTTOMMARGIN, 181
+    END
+
+    IDD_ROQADPCMDECOMPRESSORPAGE, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 118
+    END
+
+    IDD_ROQVIDEODECOMPRESSORPAGE, DIALOG
+    BEGIN
+        RIGHTMARGIN, 193
+        BOTTOMMARGIN, 122
+    END
+
+    IDD_VMDSPLITTERPAGE, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 104
+    END
+
+    IDD_VQASPLITTERPAGE, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 96
+    END
+
+    IDD_FSTSPLITTERPAGE, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 74
+    END
+
+    IDD_WSADPCMDECOMPRESSORPAGE, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 102
+    END
+
+    IDD_VQAVIDEODECOMPRESSORPAGE, DIALOG
+    BEGIN
+        RIGHTMARGIN, 193
+        BOTTOMMARGIN, 162
+    END
+
+    IDD_MVESPLITTERPAGE, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 96
+    END
+
+    IDD_MVEADPCMDECOMPRESSORPAGE, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 102
+    END
+
+    IDD_MVEVIDEODECOMPRESSORPAGE, DIALOG
+    BEGIN
+        RIGHTMARGIN, 199
+        BOTTOMMARGIN, 122
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TITLE_CIMAADPCMDECOMPRESSORPAGE "Information"
+    IDS_TITLE_HNMVIDEODECOMPRESSORPAGE "Information and Options"
+    IDS_TITLE_APCPARSERPAGE "Information"
+    IDS_TITLE_HNMSPLITTERPAGE "Information and Options"
+    IDS_TITLE_BASEPARSERPAGE "Streaming Options"
+    IDS_TITLE_CINSPLITTERPAGE "Information"
+    IDS_TITLE_CINVIDEODECOMPRESSORPAGE "Information"
+    IDS_TITLE_ROQSPLITTERPAGE "Information and Options"
+    IDS_TITLE_ROQADPCMDECOMPRESSORPAGE "Information"
+    IDS_TITLE_ROQVIDEODECOMPRESSORPAGE "Information"
+    IDS_TITLE_VMDSPLITTERPAGE "Information"
+    IDS_TITLE_VQASPLITTERPAGE "Information"
+    IDS_TITLE_FSTSPLITTERPAGE "Information"
+    IDS_TITLE_ADPCMINTERLEAVERPAGE "Information"
+    IDS_TITLE_WSADPCMDECOMPRESSORPAGE "Information"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TITLE_VQAVIDEODECOMPRESSORPAGE "Information"
+    IDS_TITLE_MVESPLITTERPAGE "Information"
+    IDS_TITLE_MVEADPCMDECOMPRESSORPAGE "Information"
+    IDS_TITLE_MVEVIDEODECOMPRESSORPAGE "Information"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

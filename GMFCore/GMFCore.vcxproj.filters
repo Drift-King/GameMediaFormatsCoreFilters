@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{78e1df8c-b803-4a6f-99e9-f6b7a5bf966d}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{84ee33ac-fcc4-4912-83a2-f3eac81cb258}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ADPCMInterleaver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="APCParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BasePlainParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CINSplitter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CINVideoDecompressor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ContinuousIMAADPCMDecompressor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FilterOptions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FSTSplitter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GMFCore.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="H263Parser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HNMSplitter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HNMVideoDecompressor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MVEADPCMDecompressor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MVESplitter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MVEVideoDecompressor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ROQADPCMDecompressor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ROQSplitter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ROQVideoDecompressor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VQASplitter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VQAVideoDecompressor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WSADPCMDecompressor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GMFCore.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ADPCMInterleaver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="APCGUID.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="APCParser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="APCSpecs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseParser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseParserConfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BasePlainParser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CINGUID.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CINSpecs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CINSplitter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CINVideoDecompressor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ContinuousIMAADPCM.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ContinuousIMAADPCMDecompressor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FilterOptions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FSTGUID.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FSTSpecs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FSTSplitter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HNMGUID.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HNMSpecs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HNMSplitter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HNMSplitterConfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HNMVideoDecompressor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HNMVideoDecompressorConfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MVEADPCMDecompressor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MVEGUID.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MVESpecs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MVESplitter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MVEVideoDecompressor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ROQADPCMDecompressor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ROQGUID.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ROQSpecs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ROQSplitter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ROQSplitterConfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ROQVideoDecompressor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VMDGUID.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VMDSpecs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VMDSplitter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VQAGUID.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VQASpecs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VQASplitter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VQAVideoDecompressor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WSADPCM.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WSADPCMDecompressor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
